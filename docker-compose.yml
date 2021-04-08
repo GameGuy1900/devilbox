@@ -15,12 +15,7 @@
 ##
 ## Copy 'docker-compose.override.yml-example' to 'docker-compose.override.yml'
 ## and edit this file with your custom changes (override or even new services).
-##
-## Edit '.env' for configuration.
-##
-## If '.env' does not exist, copy 'env-example' to '.env'
-##   $ cp env-example .env
-##
+
 
 version: '2.3'
 
@@ -104,8 +99,6 @@ services:
     ## Source all variables defined in .env
     ## This also makes any custom variable available in each PHP/HHVM container
     ##
-    env_file:
-      - ./.env
 
     environment:
       ##
